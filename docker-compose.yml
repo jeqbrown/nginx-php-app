@@ -19,7 +19,7 @@ services:
     # Mount the local 'app' dir to container NGINX root
       - ./app:/var/www/html
     ports:
-      - "8080:80"
+      - "80:80"
     depends_on:
         - php-fpm # Depends on the php-fpm service (above)
         - mysql-db # Depends on the mysql-db service (below)
